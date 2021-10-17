@@ -22,7 +22,7 @@ function makeColor() {
 }
 
 function startChange() {
-   intervalId = setInterval(makeColor, 1000);
+   intervalId = setInterval(makeColor, 1500);
    refs.startBtn.disabled = "true";
 }
     
@@ -32,3 +32,6 @@ function stopChange() {
 }
 refs.startBtn.addEventListener("click", startChange);
 refs.stopBtn.addEventListener("click", stopChange);
+
+refs.startBtn.setAttribute("style", "font-size: 20px; color: green; padding: 10px;margin-right:10px");
+refs.stopBtn.setAttribute("style", "font-size: 20px; color: red; padding: 10px");
